@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>csv_builder</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <div>
+        <div class="left">
+
+            <div class="inputs">
+                <div class="input_type">
+                    
+                    <div class="row_radio">
+                        
+                        <input type="radio" name="column_value_choice" id="column_radio" value="column">
+                        <label for="column_radio">column</label>
+                    </div>
+                    <div class="row_radio">
+                        <input type="radio" name="column_value_choice" id="value_radio" value="value">
+                        <label for="value_radio">value</label>
+                    </div>
+                </div>
+                <div class="column_inputs">
+                    <input type="text" placeholder="column name or column value" id="input_value">
+                    <button id="input_btn">add</button>
+                    <button id="input_btn_update">update</button>
+                </div>
+            </div>
+            
+            <h3 id="current_column">Column</h3>
+            <ul id="column_values_list">
+                <!-- <li>
+                    <div class="left_single_value">
+                        <p>value 1</p>
+                        <div class="controls">
+                            <button class="edit">edit</button>
+                            <button class="delete">delete</button>
+                        </div>
+                    </div>
+                </li> -->
+            </ul>
+        </div>
+        <div class="right">
+            <h2>Columns</h2>
+            <div class="column_list">
+            </div>
+            <button id="load_csv">
+                laod and view Csv
+            </button>
+            <div class="cart_product">
+                <!-- <div class="single_prod">
+                    <ul class="single_prod_values">
+                        <li>
+                            test
+                        </li>
+                        <li>
+                            test
+                        </li>
+                        <li>
+                            test
+                        </li>
+                    </ul>
+                    <button class="delete_prod">delete</button>
+                </div> -->
+            </div>
+            <button id="download_csv">
+                Download Csv
+            </button>
+        </div>
+    </div>
+</body>
+</html>
